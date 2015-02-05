@@ -12,11 +12,12 @@ using namespace std;
 int main()
 {
 	Dice ptrDice;
-	for(int i=0;i<5;i++)
-	{
-		cout << "roll was " << ptrDice.roll() << endl;
-	}
+	cout << "roll was " << ptrDice.roll() << endl;
+	cout << "roll was " << ptrDice.roll20() << endl;
+	cout << "roll was " << ptrDice.roll8() << endl;
+	cout << "roll was " << ptrDice.roll2() << endl;
 }
+
 
 
 

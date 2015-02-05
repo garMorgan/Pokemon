@@ -17,7 +17,6 @@ class Dice
 {
 	public:
 	/**
-	*  @pre None
 	*  @post Creates and initializes a Dice instance
 	*  @return Initialzed Dice with 6 sides
 	*/
@@ -31,20 +30,26 @@ class Dice
 	Dice(int numSides);
 
 	/**
-	*  @pre None
 	*  @post Creates and initializes a Dice instance
 	*  @return a pseudo-random number from 1 up and including and m_numSides
 	*/
 	int roll();
+	int roll20();
+	int roll8();
+	int roll2();
 
 	/**
-	*  @pre None
-	*  @post None
-	*  @return the value of m_numSides
+	*  return the value of m_numSides
 	*/
 	int getNumSides();
+	int getNumSides20();
+	int getNumSides8();
+	int getNumSides2();
 
 	private:
 	int m_numSides;
+	int m_numSides20;
+	int m_numSides8;
+	int m_numSides2;
 };
 #endif
